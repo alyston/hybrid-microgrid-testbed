@@ -1,0 +1,120 @@
+
+services:
+  interfacePOI:
+    image: "golang-alpine-dev"
+    container_name: interfacePOI
+    build: .
+    networks: 
+       rede_direta:
+         ipv4_address: 192.168.0.30  # IPs da rede física
+    cap_add:
+      - NET_ADMIN  # Permissão para alterar na rede
+      - NET_RAW
+    tty: true
+    stdin_open: true  
+    #restart: always
+   
+    
+  
+  interfaceBESS:
+    image: "golang-alpine-dev"
+    container_name: interfaceBESS
+    build: .
+    networks: 
+       rede_direta:
+         ipv4_address: 192.168.0.31  # IPs da rede física
+    cap_add:
+      - NET_ADMIN  # Permissão para alterar na rede
+      - NET_RAW
+    tty: true
+    stdin_open: true
+    #restart: always
+      
+    
+  interfaceGMG:
+    image: "golang-alpine-dev"
+    container_name: interfaceGMG
+    build: .
+    networks: 
+       rede_direta:
+         ipv4_address: 192.168.0.32  # IPs da rede física
+    cap_add:
+      - NET_ADMIN  # Permissão para alterar na rede
+      - NET_RAW
+    tty: true
+    stdin_open: true  
+    #restart: always
+
+
+  interfacePV:
+    image: "golang-alpine-dev"
+    container_name: interfacePV
+    build: .
+    networks: 
+       rede_direta:
+         ipv4_address: 192.168.0.33  # IPs da rede física
+    cap_add:
+      - NET_ADMIN  # Permissão para alterar na rede
+      - NET_RAW
+    tty: true
+    stdin_open: true  
+    #restart: always
+
+  interfaceLD0:
+    image: "golang-alpine-dev"
+    container_name: interfaceLD0
+    build: .
+    networks: 
+       rede_direta:
+         ipv4_address: 192.168.0.34  # IPs da rede física
+    cap_add:
+      - NET_ADMIN  # Permissão para alterar na rede
+      - NET_RAW
+    tty: true
+    stdin_open: true  
+    #restart: always
+
+
+  interfaceLD1:
+    image: "golang-alpine-dev"
+    container_name: interfaceLD1
+    build: .
+    networks: 
+       rede_direta:
+         ipv4_address: 192.168.0.35  # IPs da rede física
+    cap_add:
+      - NET_ADMIN  # Permissão para alterar na rede
+      - NET_RAW
+    tty: true
+    stdin_open: true  
+    #restart: always
+
+
+  interfaceEMS:
+    image: "golang-alpine-ems"
+    container_name: interfaceEMS
+    build: .
+    networks: 
+       rede_direta:
+         ipv4_address: 192.168.0.50  # IPs da rede física
+    cap_add:
+      - NET_ADMIN  # Permissão para alterar na rede
+      - NET_RAW
+    tty: true
+    stdin_open: true  
+    #restart: always
+
+
+networks:
+  rede_direta:
+    driver: macvlan
+    driver_opts:
+      parent: eno1  # <-- Interface física do IEESimulRedes
+    ipam:
+      config:
+        - subnet: 192.168.0.0/24    # Faixa da sua rede real
+          gateway: 192.168.0.1     # Gateway roteador físico Sem Acesso a Internet.
+
+
+
+# Arquivo usado para criar 6 containers docker para fazer interface OP4610XG com o Simulador de Rede NS3 e o EMS.

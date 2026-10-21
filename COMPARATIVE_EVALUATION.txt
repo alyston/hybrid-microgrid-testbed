@@ -1,0 +1,14 @@
+RETROSPECTIVE COMPARATIVE EVALUATION OF DEVELOPMENT TASKS
+Purpose: assess which integration questions can be addressed before the planned site communication infrastructure exists. This is a documentary/architectural comparison grounded in the April observations, not an execution of alternative platforms.
+
+Reference definitions: pure NS-3 represents communication in simulation and requires modeled controller/plant behavior; HIL without network emulation retains the physical EMS and real-time plant, with laboratory communication links but no separate packet-network model. The present hybrid adds NS-3 and Go interfaces. These are explicit reference architectures, not claims that all HIL products have these limitations. Coupling an external EMS to NS-3 changes the pure-simulation reference into a hybrid arrangement.
+
+Method: six common development questions are fixed in comparative_tasks.csv. The hybrid column is linked to recorded application/packet evidence for C1-C3, to documented architecture for C4, and to explicit absence of validation for C5-C6. Alternative columns are engineering inferences from the stated reference architectures, the NS-3 TapBridge documentation and the predeployment microgrid-controller HIL literature cited in the article. There are no invented alternative timing samples, weighted scores or numerical performance ratios.
+
+Result: HIL without a network emulator can already answer the physical-controller protocol and interface questions C1-C3, provided the same routed path and instrumentation are available. A pure network simulation can examine modeled paths but cannot directly reveal the tested controller's native/AOI behavior without modeling it. The reason to retain the hybrid is C4: exercising a physical EMS against a real-time plant while representing the planned multi-link site network in software. That capability introduces integration and timing-calibration work; the present data do not quantify its overhead. Existing hybrid frameworks may offer the same class of capability. No general methodological uniqueness or superiority is claimed.
+
+Limits: only the hybrid's nominal records were acquired. Packet timestamps at the EMS alone cannot establish traversal of every intended NS-3 path. Delay calibration, disturbance-to-electrical-response validation, and commissioning savings remain unmeasured. A direct comparison under an equivalent workload remains necessary for claims about relative timing, cost, accuracy or integration effort. The qualitative result therefore improves the response to R3.5 without converting it into a completed experimental benchmark.
+
+Primary sources already cited in the manuscript:
+NS-3 Project, Tap NetDevice: https://www.nsnam.org/docs/models/html/tap.html
+K. Prabakar et al., NREL/CP-5D00-73627 (2019): https://research-hub.nlr.gov/en/publications/hardware-in-the-loop-test-bed-and-test-methodology-for-microgrid--3/

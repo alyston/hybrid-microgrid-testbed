@@ -1,0 +1,751 @@
+{
+  "scope": "Archived acquisitions of 30 April 2026; no new experiment",
+  "units": "milliseconds unless otherwise stated",
+  "quantiles": "linear interpolation at (n-1)*p",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "EIP": {
+    "application": {
+      "READ_COM_REF": {
+        "n": 7584,
+        "mean": 5.773049578059071,
+        "median": 5.7735,
+        "std_population": 2.5309149045100527,
+        "p95": 7.308,
+        "p99": 11.858210000000001,
+        "max": 182.801
+      },
+      "WRITE_STATUS_FEEDBACK": {
+        "n": 7584,
+        "mean": 11.664082410337553,
+        "median": 12.0795,
+        "std_population": 2.3286072742061856,
+        "p95": 13.6717,
+        "p99": 18.865679999999998,
+        "max": 26.807
+      },
+      "phases": {
+        "scan_write_ms": {
+          "n": 1264,
+          "mean": 70.09038370253164,
+          "median": 69.711,
+          "std_population": 4.563258067845098,
+          "p95": 78.36205,
+          "p99": 81.21307,
+          "max": 86.937
+        },
+        "scan_latency_ms": {
+          "n": 1264,
+          "mean": 50.55888053797469,
+          "median": 50.554,
+          "std_population": 0.32213435134650276,
+          "p95": 51.047850000000004,
+          "p99": 51.11159,
+          "max": 51.76
+        },
+        "scan_read_ms": {
+          "n": 1264,
+          "mean": 34.749829905063294,
+          "median": 34.9925,
+          "std_population": 6.075803986780918,
+          "p95": 41.211299999999994,
+          "p99": 42.61872999999999,
+          "max": 216.263
+        },
+        "scan_total_ms": {
+          "n": 1264,
+          "mean": 155.40041297468355,
+          "median": 155.261,
+          "std_population": 7.503372821585309,
+          "p95": 165.46609999999998,
+          "p99": 167.71885,
+          "max": 342.322
+        }
+      },
+      "within_200_ms": 1263,
+      "scan_count": 1264,
+      "stale_writes": 168,
+      "stale_scan_indices": 29
+    },
+    "routers": {
+      "physical_input": {
+        "events": 134070,
+        "positive_inter_event_ms": {
+          "n": 134064,
+          "mean": 10.00265764858575,
+          "median": 10.004,
+          "std_population": 0.1535068272571898,
+          "p95": 10.239,
+          "p99": 10.386,
+          "max": 11.389
+        },
+        "local_duration_ms": {
+          "n": 134070,
+          "mean": 0.0,
+          "median": 0.0,
+          "std_population": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "error_rows": 0
+      },
+      "command_cycle": {
+        "events": 30368,
+        "positive_inter_event_ms": {
+          "n": 30362,
+          "mean": 49.99955473947698,
+          "median": 50.011,
+          "std_population": 0.38890171333678697,
+          "p95": 50.695,
+          "p99": 50.975,
+          "max": 59.307
+        },
+        "local_duration_ms": {
+          "n": 30368,
+          "mean": 0.00022806902002107482,
+          "median": 0.0,
+          "std_population": 0.01780660803129171,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 2.821
+        },
+        "error_rows": 0
+      },
+      "controller_request": {
+        "events": 29417,
+        "positive_inter_event_ms": {
+          "n": 29411,
+          "mean": 50.23701985651627,
+          "median": 50.038,
+          "std_population": 6.914846964431809,
+          "p95": 62.1485,
+          "p99": 68.02300000000001,
+          "max": 103.892
+        },
+        "local_duration_ms": {
+          "n": 29417,
+          "mean": 0.00516038345174559,
+          "median": 0.004,
+          "std_population": 0.005891696005326037,
+          "p95": 0.014,
+          "p99": 0.025,
+          "max": 0.224
+        },
+        "error_rows": 0
+      },
+      "nonunit_receive_version_increments": 0
+    },
+    "captures": {
+      "EMS": {
+        "complete_packets": 133824,
+        "duration_s": 251.825141,
+        "industrial_packets": 133068,
+        "industrial_payload_packets": 104186,
+        "industrial_payload_goodput_kbps": 238.20484230365227,
+        "tcp_payload_sequence_repeats": 12,
+        "tcp_resets": 25,
+        "tcp_zero_windows": 25,
+        "rtt_ms": {
+          "EtherNetIP": {
+            "n": 22667,
+            "mean": 5.723113160100587,
+            "median": 5.842,
+            "std_population": 1.9282662628772955,
+            "p95": 7.143,
+            "p99": 11.90168,
+            "max": 182.695
+          },
+          "Modbus": {
+            "n": 29416,
+            "mean": 30.576151346206146,
+            "median": 29.633,
+            "std_population": 17.72686544442771,
+            "p95": 60.432,
+            "p99": 70.93364999999999,
+            "max": 126.446
+          }
+        },
+        "unmatched_requests": 19
+      },
+      "POI": {
+        "complete_packets": 35660,
+        "duration_s": 251.328834,
+        "industrial_packets": 12588,
+        "industrial_payload_packets": 9851,
+        "industrial_payload_goodput_kbps": 17.08795577351065,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 4925,
+            "mean": 0.08391634517766498,
+            "median": 0.078,
+            "std_population": 0.03163401604940238,
+            "p95": 0.128,
+            "p99": 0.172,
+            "max": 0.72
+          }
+        },
+        "unmatched_requests": 1,
+        "dominant_230xx_udp": {
+          "packets": 22345,
+          "iat_ms": {
+            "n": 22344,
+            "mean": 10.003157133906193,
+            "median": 10.004,
+            "std_population": 0.12974766631710852,
+            "p95": 10.221,
+            "p99": 10.322,
+            "max": 10.673
+          },
+          "payload_goodput_kbps": 70.38093053176466
+        }
+      },
+      "BESS": {
+        "complete_packets": 36073,
+        "duration_s": 251.342021,
+        "industrial_packets": 12894,
+        "industrial_payload_packets": 9878,
+        "industrial_payload_goodput_kbps": 17.1366490285363,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 11,
+        "tcp_zero_windows": 11,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 4939,
+            "mean": 0.0801767564284268,
+            "median": 0.076,
+            "std_population": 0.03617215113095113,
+            "p95": 0.123,
+            "p99": 0.1586199999999999,
+            "max": 1.051
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22345,
+          "iat_ms": {
+            "n": 22344,
+            "mean": 10.00315708915145,
+            "median": 10.004,
+            "std_population": 0.12961925305136962,
+            "p95": 10.22,
+            "p99": 10.322,
+            "max": 10.674
+          },
+          "payload_goodput_kbps": 70.38093084665331
+        }
+      },
+      "GMG": {
+        "complete_packets": 32940,
+        "duration_s": 251.307035,
+        "industrial_packets": 9859,
+        "industrial_payload_packets": 9854,
+        "industrial_payload_goodput_kbps": 17.09599574082755,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 4927,
+            "mean": 0.0811528313375279,
+            "median": 0.076,
+            "std_population": 0.0753438850768278,
+            "p95": 0.121,
+            "p99": 0.15573999999999977,
+            "max": 5.001
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22345,
+          "iat_ms": {
+            "n": 22344,
+            "mean": 10.00315708915145,
+            "median": 10.004,
+            "std_population": 0.1292903218236767,
+            "p95": 10.22,
+            "p99": 10.322,
+            "max": 10.674
+          },
+          "payload_goodput_kbps": 70.38093084665331
+        }
+      },
+      "PV": {
+        "complete_packets": 32948,
+        "duration_s": 251.310058,
+        "industrial_packets": 9857,
+        "industrial_payload_packets": 9852,
+        "industrial_payload_goodput_kbps": 17.092447609080573,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 1,
+        "tcp_zero_windows": 1,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 4926,
+            "mean": 0.08206678846934631,
+            "median": 0.077,
+            "std_population": 0.028309384303897716,
+            "p95": 0.12575,
+            "p99": 0.16,
+            "max": 0.688
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22345,
+          "iat_ms": {
+            "n": 22344,
+            "mean": 10.003157178660938,
+            "median": 10.003,
+            "std_population": 0.12837070972435063,
+            "p95": 10.219,
+            "p99": 10.32057,
+            "max": 10.677
+          },
+          "payload_goodput_kbps": 70.38093021687602
+        }
+      },
+      "LD0": {
+        "complete_packets": 32782,
+        "duration_s": 251.264036,
+        "industrial_packets": 9700,
+        "industrial_payload_packets": 9695,
+        "industrial_payload_goodput_kbps": 16.82166722817427,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 4847,
+            "mean": 0.08402702702702702,
+            "median": 0.079,
+            "std_population": 0.030625241175235785,
+            "p95": 0.127,
+            "p99": 0.16507999999999995,
+            "max": 0.847
+          }
+        },
+        "unmatched_requests": 1,
+        "dominant_230xx_udp": {
+          "packets": 22345,
+          "iat_ms": {
+            "n": 22344,
+            "mean": 10.00315708915145,
+            "median": 10.003,
+            "std_population": 0.12808122866967991,
+            "p95": 10.218,
+            "p99": 10.32057,
+            "max": 10.677
+          },
+          "payload_goodput_kbps": 70.38093084665331
+        }
+      },
+      "LD1": {
+        "complete_packets": 32785,
+        "duration_s": 251.093,
+        "industrial_packets": 9699,
+        "industrial_payload_packets": 9694,
+        "industrial_payload_goodput_kbps": 16.83274324652619,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 4847,
+            "mean": 0.0841015060862389,
+            "median": 0.079,
+            "std_population": 0.027566915264636862,
+            "p95": 0.126,
+            "p99": 0.161,
+            "max": 0.599
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22345,
+          "iat_ms": {
+            "n": 22344,
+            "mean": 10.00315708915145,
+            "median": 10.003,
+            "std_population": 0.1270253220738044,
+            "p95": 10.217,
+            "p99": 10.318,
+            "max": 10.678
+          },
+          "payload_goodput_kbps": 70.38093084665331
+        }
+      }
+    }
+  },
+  "MB": {
+    "application": {
+      "4": {
+        "n": 1370,
+        "mean": 18.850608759124086,
+        "median": 15.089,
+        "std_population": 13.450349585945967,
+        "p95": 35.47155,
+        "p99": 36.96554999999996,
+        "max": 126.315
+      },
+      "16": {
+        "n": 1334,
+        "mean": 20.454134182908543,
+        "median": 15.1835,
+        "std_population": 14.241326787483741,
+        "p95": 45.5501,
+        "p99": 45.93105,
+        "max": 55.902
+      },
+      "reconstructed": {
+        "definition": "last request start plus its duration minus first request start; gaps end at next POI write start",
+        "read_sweep": {
+          "n": 187,
+          "mean": 850.3179619304813,
+          "median": 847.093576,
+          "std_population": 10.883886585281111,
+          "p95": 866.2049281,
+          "p99": 883.7056777,
+          "max": 885.475385
+        },
+        "write_sweep": {
+          "n": 222,
+          "mean": 865.4581041801802,
+          "median": 856.197152,
+          "std_population": 36.4812253988494,
+          "p95": 953.84682435,
+          "p99": 975.3499125699999,
+          "max": 1090.261592
+        },
+        "gap": {
+          "n": 222,
+          "mean": 128.72172832882882,
+          "median": 125.1604555,
+          "std_population": 21.33499289284037,
+          "p95": 148.04822249999998,
+          "p99": 223.3502485,
+          "max": 234.422355
+        },
+        "cycle": {
+          "n": 222,
+          "mean": 994.1798325090091,
+          "median": 980.578912,
+          "std_population": 44.40749043446598,
+          "p95": 1084.7765898,
+          "p99": 1144.9282494599995,
+          "max": 1265.994274
+        },
+        "exceed_1000_ms": 41
+      }
+    },
+    "routers": {
+      "physical_input": {
+        "events": 138614,
+        "positive_inter_event_ms": {
+          "n": 138608,
+          "mean": 10.001198949555581,
+          "median": 10.006,
+          "std_population": 0.19796115446808715,
+          "p95": 10.318,
+          "p99": 10.487,
+          "max": 11.671
+        },
+        "local_duration_ms": {
+          "n": 138614,
+          "mean": 0.0,
+          "median": 0.0,
+          "std_population": 0.0,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.0
+        },
+        "error_rows": 0
+      },
+      "command_cycle": {
+        "events": 27724,
+        "positive_inter_event_ms": {
+          "n": 27718,
+          "mean": 49.99948481131395,
+          "median": 50.002,
+          "std_population": 0.39887292856658574,
+          "p95": 50.77,
+          "p99": 50.986,
+          "max": 55.569
+        },
+        "local_duration_ms": {
+          "n": 27724,
+          "mean": 0.00022143269369499351,
+          "median": 0.0,
+          "std_population": 0.009807017605345152,
+          "p95": 0.0,
+          "p99": 0.0,
+          "max": 0.578
+        },
+        "error_rows": 0
+      },
+      "controller_request": {
+        "events": 2704,
+        "positive_inter_event_ms": {
+          "n": 2698,
+          "mean": 489.5866438102299,
+          "median": 471.55449999999996,
+          "std_population": 296.32257999145827,
+          "p95": 937.50255,
+          "p99": 1057.4799400000006,
+          "max": 1229.919
+        },
+        "local_duration_ms": {
+          "n": 2704,
+          "mean": 0.008513313609467457,
+          "median": 0.007,
+          "std_population": 0.007366853657225352,
+          "p95": 0.021,
+          "p99": 0.034,
+          "max": 0.1
+        },
+        "error_rows": 0
+      },
+      "nonunit_receive_version_increments": 0
+    },
+    "captures": {
+      "EMS": {
+        "complete_packets": 16945,
+        "duration_s": 228.885699,
+        "industrial_packets": 16236,
+        "industrial_payload_packets": 10818,
+        "industrial_payload_goodput_kbps": 20.983259421550844,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 5408,
+            "mean": 20.038602440828402,
+            "median": 15.1175,
+            "std_population": 14.15377068891389,
+            "p95": 45.23179999999999,
+            "p99": 51.35098000000011,
+            "max": 144.032
+          }
+        },
+        "unmatched_requests": 2
+      },
+      "POI": {
+        "complete_packets": 24988,
+        "duration_s": 229.29871,
+        "industrial_packets": 1348,
+        "industrial_payload_packets": 896,
+        "industrial_payload_goodput_kbps": 1.734820051974998,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 448,
+            "mean": 0.10200892857142858,
+            "median": 0.101,
+            "std_population": 0.02688533706041345,
+            "p95": 0.145,
+            "p99": 0.18258999999999992,
+            "max": 0.218
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22927,
+          "iat_ms": {
+            "n": 22926,
+            "mean": 10.001688475966153,
+            "median": 10.005,
+            "std_population": 0.17992459564859983,
+            "p95": 10.298,
+            "p99": 10.425,
+            "max": 11.028
+          },
+          "payload_goodput_kbps": 70.39118536689544
+        }
+      },
+      "BESS": {
+        "complete_packets": 25067,
+        "duration_s": 229.308671,
+        "industrial_packets": 1356,
+        "industrial_payload_packets": 902,
+        "industrial_payload_goodput_kbps": 1.746152896241765,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 451,
+            "mean": 0.09608647450110863,
+            "median": 0.092,
+            "std_population": 0.02631649544221674,
+            "p95": 0.1365,
+            "p99": 0.1845,
+            "max": 0.295
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22928,
+          "iat_ms": {
+            "n": 22927,
+            "mean": 10.001686701269247,
+            "median": 10.005,
+            "std_population": 0.17966779225682425,
+            "p95": 10.297,
+            "p99": 10.425,
+            "max": 11.029
+          },
+          "payload_goodput_kbps": 70.39119772317724
+        }
+      },
+      "GMG": {
+        "complete_packets": 25007,
+        "duration_s": 229.358588,
+        "industrial_packets": 1357,
+        "industrial_payload_packets": 902,
+        "industrial_payload_goodput_kbps": 1.74563334859735,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 451,
+            "mean": 0.10429046563192905,
+            "median": 0.102,
+            "std_population": 0.02681326362894065,
+            "p95": 0.15,
+            "p99": 0.1885,
+            "max": 0.291
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22933,
+          "iat_ms": {
+            "n": 22932,
+            "mean": 10.001682714111286,
+            "median": 10.005,
+            "std_population": 0.17937249253769416,
+            "p95": 10.297,
+            "p99": 10.425,
+            "max": 11.029
+          },
+          "payload_goodput_kbps": 70.3912251151459
+        }
+      },
+      "PV": {
+        "complete_packets": 24992,
+        "duration_s": 229.318792,
+        "industrial_packets": 1351,
+        "industrial_payload_packets": 898,
+        "industrial_payload_goodput_kbps": 1.7383311525555218,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 449,
+            "mean": 0.10105122494432071,
+            "median": 0.102,
+            "std_population": 0.024342206823142996,
+            "p95": 0.14,
+            "p99": 0.1780799999999999,
+            "max": 0.202
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22929,
+          "iat_ms": {
+            "n": 22928,
+            "mean": 10.001691905094209,
+            "median": 10.005,
+            "std_population": 0.17885903698840844,
+            "p95": 10.297,
+            "p99": 10.423,
+            "max": 11.029
+          },
+          "payload_goodput_kbps": 70.39116096512491
+        }
+      },
+      "LD0": {
+        "complete_packets": 25007,
+        "duration_s": 229.362262,
+        "industrial_packets": 1359,
+        "industrial_payload_packets": 906,
+        "industrial_payload_goodput_kbps": 1.7532090784838879,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 453,
+            "mean": 0.10733112582781458,
+            "median": 0.103,
+            "std_population": 0.0648091157285298,
+            "p95": 0.15199999999999989,
+            "p99": 0.21636000000000014,
+            "max": 1.348
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22933,
+          "iat_ms": {
+            "n": 22932,
+            "mean": 10.001696930054072,
+            "median": 10.006,
+            "std_population": 0.17860396671368295,
+            "p95": 10.296,
+            "p99": 10.423689999999999,
+            "max": 11.03
+          },
+          "payload_goodput_kbps": 70.39112506436092
+        }
+      },
+      "LD1": {
+        "complete_packets": 25009,
+        "duration_s": 229.348899,
+        "industrial_packets": 1360,
+        "industrial_payload_packets": 904,
+        "industrial_payload_goodput_kbps": 1.749509161585293,
+        "tcp_payload_sequence_repeats": 0,
+        "tcp_resets": 0,
+        "tcp_zero_windows": 0,
+        "rtt_ms": {
+          "Modbus": {
+            "n": 452,
+            "mean": 0.10428539823008849,
+            "median": 0.105,
+            "std_population": 0.02349920840449467,
+            "p95": 0.14234999999999995,
+            "p99": 0.186,
+            "max": 0.255
+          }
+        },
+        "unmatched_requests": 0,
+        "dominant_230xx_udp": {
+          "packets": 22932,
+          "iat_ms": {
+            "n": 22931,
+            "mean": 10.001696349919323,
+            "median": 10.005,
+            "std_population": 0.1781979091307299,
+            "p95": 10.296,
+            "p99": 10.421,
+            "max": 11.033
+          },
+          "payload_goodput_kbps": 70.39112928115692
+        }
+      }
+    }
+  }
+}

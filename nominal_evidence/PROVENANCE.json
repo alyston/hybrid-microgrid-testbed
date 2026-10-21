@@ -1,0 +1,284 @@
+[
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/captureEMS.pcap",
+    "source_sha256": "991a9067c2a4c739e875cecac7013b630491c138c08851fc1cf28ff36b9852d6",
+    "source_bytes": 18611368,
+    "extract": "EIP_EMS_packets.csv.gz",
+    "extract_sha256": "6c8bb8541460df842185d7d6f9c49a5bc442b85ecb1ae83a4759ef299cceb8f3",
+    "rows": 133824,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/capturePOI.pcap",
+    "source_sha256": "21ba8ec7ef72d86ef66dbed2956609edc0d77e15a8da8fe7d45e506e7f46eeaf",
+    "source_bytes": 5150380,
+    "extract": "EIP_POI_packets.csv.gz",
+    "extract_sha256": "74880a50a6fd15fc37fa3b4397a97cae189477fdeb8d8fe87f923db67b00340d",
+    "rows": 35660,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/captureBESS.pcap",
+    "source_sha256": "d6e73ca91778ed461da93d60b338a289dd80a18edb075b1fa92ab00791735efc",
+    "source_bytes": 5189721,
+    "extract": "EIP_BESS_packets.csv.gz",
+    "extract_sha256": "577c54cc4ea6e1b6ea448c5f370c7b6d0a75d35764a27901a7e57e7376123fd3",
+    "rows": 36073,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/captureGMG.pcap",
+    "source_sha256": "b01bbe420b256c64e5367c290b948f7f4b834a52a9e92db79ef89e78f50948b8",
+    "source_bytes": 4911745,
+    "extract": "EIP_GMG_packets.csv.gz",
+    "extract_sha256": "da20dfd6726397b1dec1dada00883560dca9c09068703c4cf2c4381fcefaf8d9",
+    "rows": 32940,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/capturePV.pcap",
+    "source_sha256": "008788f4554479674d4dd9b005069ad12d7d44d844608a5c74a56b62e0edeef6",
+    "source_bytes": 4912469,
+    "extract": "EIP_PV_packets.csv.gz",
+    "extract_sha256": "dfe0319bb8fd7566272e12f8e24b68831c83491805664d6aec6232329a53cb73",
+    "rows": 32948,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/captureLD0.pcap",
+    "source_sha256": "8f591c3e0d9e2a2b616b42ebaaf9d88268129065a5f0c60c601706673298d5b4",
+    "source_bytes": 4889359,
+    "extract": "EIP_LD0_packets.csv.gz",
+    "extract_sha256": "6ddbf5a3ff89a1df53954ace17542c62a9683126974f3156ecdf290bdbf48a71",
+    "rows": 32782,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0,
+    "truncated_tail_bytes": 16,
+    "incomplete_record_expected_bytes": 185
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/captureLD1.pcap",
+    "source_sha256": "f5403b6ba5687d3acaad4f52219016fec6758bf91f0665b944e3719f3b566f20",
+    "source_bytes": 4889631,
+    "extract": "EIP_LD1_packets.csv.gz",
+    "extract_sha256": "def21ab45a7cdc5bc32c4f687d37e7e93d81a976b25aeb8e8b5007346e490063",
+    "rows": 32785,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/device_router_metricsPOI.csv",
+    "source_sha256": "55086ecd01c58e79bbd82583ef69de2cf72cc2f7332f1ae11acf2271c7b8fa5f",
+    "source_bytes": 9727397,
+    "extract": "EIP_POI_router.csv.gz",
+    "extract_sha256": "c363cb908f12c67621c16cfa21d5074c136c271bfd7dd41fc3a49f07dceef334",
+    "rows": 32335,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/device_router_metricsBESS.csv",
+    "source_sha256": "a4064da51e80fa21e424ad40e0422262d605e48607f5fda920c8e04ae8498dbf",
+    "source_bytes": 9768153,
+    "extract": "EIP_BESS_router.csv.gz",
+    "extract_sha256": "902679dafd76cc2e891a93cc0cafff459114c950f0bf2402cb177fc5bb9d48fd",
+    "rows": 32358,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/device_router_metricsGMG.csv",
+    "source_sha256": "fb87efcd0e88246bdfd92c7ab8d94b9fc503a8856bc5737d3fd10eb51a0cdf39",
+    "source_bytes": 9727855,
+    "extract": "EIP_GMG_router.csv.gz",
+    "extract_sha256": "74c3389300d73a36b4a51ad10c453f57d64df679687ccd06e553ee1bf3467572",
+    "rows": 32334,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/device_router_metricsPV.csv",
+    "source_sha256": "304bd97f5050d3f1abdc298159b3652e2f6161ccd76e3f269d3b3f92a3c87194",
+    "source_bytes": 9695891,
+    "extract": "EIP_PV_router.csv.gz",
+    "extract_sha256": "16b8eda48aa5eecaffa6b49280c1a5b434f6baea6941bf986192db102a44a449",
+    "rows": 32334,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/device_router_metricsLD0.csv",
+    "source_sha256": "55c7f469e4f004959a7caf68bf25b12ab8de08de5137e16fc4060a3a3c7ea054",
+    "source_bytes": 9701900,
+    "extract": "EIP_LD0_router.csv.gz",
+    "extract_sha256": "7e9b9d80e66ded9b6dea365f3c21a4834f6dc79b2769fc0ec28e40d5edf61b92",
+    "rows": 32253,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/device_router_metricsLD1.csv",
+    "source_sha256": "5aba7580633057be633b32853e3a61fa1ae001b3f32171b7596bc594fc4818dd",
+    "source_bytes": 9702033,
+    "extract": "EIP_LD1_router.csv.gz",
+    "extract_sha256": "b2e0df1d705652f4dedec03cc5ecf587f7a56c2444aca9aca2b19a0d13bf9194",
+    "rows": 32253,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_EIP/Dados_Simul_30_04_26_EIP/plc_scan_metrics.csv",
+    "source_sha256": "15cc3bd56d66f9b12ce588d8fb33d29654b1c9127a4bea2d4f408d12d727aa53",
+    "source_bytes": 4247381,
+    "extract": "EIP_EMS_application.csv.gz",
+    "extract_sha256": "9dc89e923ef243a476df51e82b3a769c45e534692ba17ff44da927dc7385d7e0",
+    "rows": 16432,
+    "clock": "Go application-log local relative nanoseconds"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/captureEMS.pcap",
+    "source_sha256": "c865b2df64fbe865b515b433aae9626ef8ec4829721b7d4f6b810cc33c7bea32",
+    "source_bytes": 2052826,
+    "extract": "MB_EMS_packets.csv.gz",
+    "extract_sha256": "8e0c653ed4537fff14fbc533c118cb104a3625c3aa371ef05883cc548da79a23",
+    "rows": 16945,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/capturePOI.pcap",
+    "source_sha256": "cb8cb562e754032ffbd819ad98b513abf1cb1353e58f7b87e884cf291c658b8e",
+    "source_bytes": 3760275,
+    "extract": "MB_POI_packets.csv.gz",
+    "extract_sha256": "6172d7e108b8e389912b99e8b5b8f9178d751fbf125fe9ce54bbcdfc164ee74b",
+    "rows": 24988,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/captureBESS.pcap",
+    "source_sha256": "dc4add3844e8f18f6426df16cf1bde315eb9342686a172e35097c7d365a64ecb",
+    "source_bytes": 3768711,
+    "extract": "MB_BESS_packets.csv.gz",
+    "extract_sha256": "085dc51251f0d99ee581eb467d3cf417cfdea8f54a44b1a0629993b06b1a1891",
+    "rows": 25067,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/captureGMG.pcap",
+    "source_sha256": "3fa939305c1d012402825c2527e5eadcb7737a379e71a8dd52e6744137cce4fd",
+    "source_bytes": 3762759,
+    "extract": "MB_GMG_packets.csv.gz",
+    "extract_sha256": "8e1daeb8d749c226b386814aa706893b363a4a53f4c728694414f7a4ebfb37ff",
+    "rows": 25007,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/capturePV.pcap",
+    "source_sha256": "25e72a629cf3bdbe356645e5376eec27272b22004fcc8d8f03dbe2c40218c35e",
+    "source_bytes": 3760679,
+    "extract": "MB_PV_packets.csv.gz",
+    "extract_sha256": "6c707114a6938a4b9ed8975a27e48087844277972c9db8b372b44c7c44590522",
+    "rows": 24992,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/captureLD0.pcap",
+    "source_sha256": "e4319298d7f75052dcdc9d8392d1f742aba6f3508796d1f3a2be543ca7a98598",
+    "source_bytes": 3762909,
+    "extract": "MB_LD0_packets.csv.gz",
+    "extract_sha256": "1c7e1554beebfe284f7d0d2858073e93f0badc231909a5bc7ca2877a50cfa4d8",
+    "rows": 25007,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/captureLD1.pcap",
+    "source_sha256": "106b57bd7fe0441315bf6941c89a024d37eede8ba0ad0ca9c9ec5b62147d14c6",
+    "source_bytes": 3762889,
+    "extract": "MB_LD1_packets.csv.gz",
+    "extract_sha256": "3fa63c6c08a57998c12551c8f8e794e86f983e910de025fcf7eccc10bdcb0392",
+    "rows": 25009,
+    "clock": "capture-local; relative nanoseconds from first packet",
+    "unparsed_industrial_payload_packets": 0,
+    "fragment_offsets_nonzero": 0
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/device_router_metricsPOI.csv",
+    "source_sha256": "88a837b102f2e0587699189d7fa0b9cbe5709d03c92c840b34a2f82a01ab871a",
+    "source_bytes": 8473822,
+    "extract": "MB_POI_router.csv.gz",
+    "extract_sha256": "598aeb871ab067d6caa17352dd656ee56d3306b00792489afc08b1802296d7e2",
+    "rows": 28179,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/device_router_metricsBESS.csv",
+    "source_sha256": "06dc2013f2121b2f5d476381d4f4e9643612af846eefab74b018f69b38240707",
+    "source_bytes": 8502874,
+    "extract": "MB_BESS_router.csv.gz",
+    "extract_sha256": "6b5916c1f939f064858aef8294253e71a1183ae194370bd1f1acb05440b973e3",
+    "rows": 28187,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/device_router_metricsGMG.csv",
+    "source_sha256": "0611a4f7180febc11edc909adedaf35b4874b0fb396b889d2b4a8b1f9ba72e73",
+    "source_bytes": 8473434,
+    "extract": "MB_GMG_router.csv.gz",
+    "extract_sha256": "02de476d91b9a44b540ffbaa850ae7bb3a16fd4e71f317ce5117eb5838de2754",
+    "rows": 28177,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/device_router_metricsPV.csv",
+    "source_sha256": "02385d64c95260111c30bbe17eab8e47234f1a5a5e34f60645c844fd9ebaa6a1",
+    "source_bytes": 8443891,
+    "extract": "MB_PV_router.csv.gz",
+    "extract_sha256": "59515007e9ae8b0221292b9039d6bc003a9e9303b05bf68ce8c3decc774c267c",
+    "rows": 28173,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/device_router_metricsLD0.csv",
+    "source_sha256": "f3ce1c2db29eeff5c8c03325ec756b7e37693d31938cffc8a96654d9a6cd8974",
+    "source_bytes": 8472089,
+    "extract": "MB_LD0_router.csv.gz",
+    "extract_sha256": "0ca48182bce6fbd23104d941fa79c5640f49e5853dc11febf8b691bef3245591",
+    "rows": 28173,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/device_router_metricsLD1.csv",
+    "source_sha256": "545794b65d29cd8483dc394f189d64dfe94429f59467a035c396e215fc63b41b",
+    "source_bytes": 8470363,
+    "extract": "MB_LD1_router.csv.gz",
+    "extract_sha256": "4df0cb4341a54e1c1ad428f3e9d6022e666b20abce8522384f0a0f7fb965e620",
+    "rows": 28168,
+    "clock": "Go log-local relative nanoseconds; logged intervals retained"
+  },
+  {
+    "source": "Dados_Simul_30_04_26_MB/Dados_Simul_30_04_26_MB/plc_scan_metrics.csv",
+    "source_sha256": "97003ce64cc46d947df4c1da3bca5677640f6378c09e0f24c45c6e888674f1d8",
+    "source_bytes": 263522,
+    "extract": "MB_EMS_application.csv.gz",
+    "extract_sha256": "5e245e60b67c94c3043af44a157c56121c7010dd97329c7076c2033d3ac4109c",
+    "rows": 2704,
+    "clock": "Go application-log local relative nanoseconds"
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "evidence_level": "Settings read from the author-identified backup; not a recovered runtime execution manifest.",
+  "ns3": {
+    "source": "comun_ugrid.cc",
+    "scheduler_implementation": "ns3::RealtimeSimulatorImpl",
+    "synchronization_mode": "not explicitly set",
+    "checksum_enabled": true,
+    "tap_mode": "UseBridge",
+    "bridge_nodes": 4,
+    "external_endpoints": 7,
+    "access_rate": "100Mbps",
+    "access_delay": "0.01ms",
+    "backbone": [
+      {
+        "link": "br0-br1",
+        "rate": "100Mbps",
+        "delay": "2ms"
+      },
+      {
+        "link": "br1-br2",
+        "rate": "50Mbps",
+        "delay": "5ms"
+      },
+      {
+        "link": "br2-br3",
+        "rate": "10Mbps",
+        "delay": "10ms"
+      }
+    ],
+    "configured_stop_seconds": 3601,
+    "exact_ns3_release": "not supplied",
+    "interpretation": "Source defaults are not calibrated imposed-delay results and are not inferred from packet RTTs."
+  },
+  "dependencies": {
+    "go_mod_language_version": "1.22.2",
+    "gologix": "v0.39.0-beta",
+    "simonvetter_modbus": "v1.6.4",
+    "builder_image": "golang:1.24-alpine",
+    "runtime_image": "alpine:latest",
+    "image_digests": "not supplied"
+  },
+  "protocol_selection": {
+    "default_Image_EMS_source": "Modbus/TCP",
+    "EIP_variant": "Image_EMS/Arquivos_go/ems_router_cplx_eip.go",
+    "MB_variant": "Image_EMS/Arquivos_go/ems_router_cplx_MB.go",
+    "EIP_scan_ms": 200,
+    "EIP_wait_ms": 50,
+    "internal_modbus_registers": 44
+  },
+  "device": {
+    "measurement_transport": "UDP",
+    "command_transport": "TCP",
+    "command_check_ms": 50,
+    "command_send_mode": "ON_CHANGE",
+    "stale_timeout_ms": 1000
+  },
+  "provenance_comparison": {
+    "MB_root": "Byte-identical to EMS_MB_archived_compatible_20260430.go already supplied.",
+    "MB_variant": "Differs from root only by omission of the opening comment.",
+    "EIP_variant": "Identical text to EMS_EIP_archived_compatible_20260427.go after line-ending normalization."
+  },
+  "binary_observation": {
+    "compiler_strings": "go1.22.2 in the two archived root executables",
+    "EMS_executable": "Contains gologix dependency metadata while the same directory main source is Modbus-only.",
+    "device_executable": "Contains no module dependency record for the Modbus library required by the selected source.",
+    "limit": "These binaries do not establish an exact source-to-executable-to-acquisition chain. They are not distributed or executed."
+  },
+  "checks": "Hash identity and shell syntax only; compilation and hardware/network deployment not tested."
+}

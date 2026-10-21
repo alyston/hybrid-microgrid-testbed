@@ -1,0 +1,17 @@
+[
+  {
+    "source": "Original Modbus EMS PCAP, 30 April 2026",
+    "sha256": "c865b2df64fbe865b515b433aae9626ef8ec4829721b7d4f6b810cc33c7bea32",
+    "distributed": false
+  },
+  {
+    "source": "Original Modbus application CSV, 30 April 2026",
+    "sha256": "97003ce64cc46d947df4c1da3bca5677640f6378c09e0f24c45c6e888674f1d8",
+    "distributed": false
+  },
+  {
+    "source": "Original EtherNet/IP plc_scan_metrics.csv, 30 April 2026",
+    "sha256": "15cc3bd56d66f9b12ce588d8fb33d29654b1c9127a4bea2d4f408d12d727aa53",
+    "distributed": false
+  }
+]

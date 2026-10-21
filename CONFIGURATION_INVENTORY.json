@@ -1,0 +1,110 @@
+[
+  {
+    "parameter": "acquisitions",
+    "value": "30 April 2026; one per protocol",
+    "evidence_level": "recorded",
+    "source_or_limit": "original log/capture hashes; PROVENANCE.json"
+  },
+  {
+    "parameter": "physical EMS",
+    "value": "CompactLogix 1769-L18ER-BB1B; firmware 31.11",
+    "evidence_level": "reported configuration",
+    "source_or_limit": "Manuscript Table 2"
+  },
+  {
+    "parameter": "plant",
+    "value": "OP4610XG / RT-LAB / MATLAB-Simulink",
+    "evidence_level": "reported configuration",
+    "source_or_limit": "Manuscript III-B and Table 2; deployable project not distributed"
+  },
+  {
+    "parameter": "host",
+    "value": "Dell Precision Tower 3431; Ubuntu 24.04.4; six emulated endpoints",
+    "evidence_level": "reported configuration",
+    "source_or_limit": "Manuscript Table 2"
+  },
+  {
+    "parameter": "endpoints",
+    "value": "POI BESS GMG PV LD0 LD1",
+    "evidence_level": "observed",
+    "source_or_limit": "application and device exports"
+  },
+  {
+    "parameter": "MB roles",
+    "value": "controller client; router forwards FC04 reads and FC16 writes",
+    "evidence_level": "observed and source-compatible",
+    "source_or_limit": "MB application/packet exports; EMS_MB source snapshot"
+  },
+  {
+    "parameter": "EIP roles",
+    "value": "Go service writes feedback/status and reads commands/references",
+    "evidence_level": "observed and source-compatible",
+    "source_or_limit": "EIP application export; EMS_EIP source snapshot"
+  },
+  {
+    "parameter": "MB task",
+    "value": "10 ms periodic controller task",
+    "evidence_level": "reported configuration",
+    "source_or_limit": "Manuscript VI-B; controller project not supplied"
+  },
+  {
+    "parameter": "EIP scan budget / wait",
+    "value": "200 ms / programmed 50 ms",
+    "evidence_level": "source-compatible and logged",
+    "source_or_limit": "EMS_EIP snapshot; scan summaries"
+  },
+  {
+    "parameter": "network ports",
+    "value": "TCP 502 and 44818; OPAL/router UDP 230xx",
+    "evidence_level": "observed",
+    "source_or_limit": "packet exports"
+  },
+  {
+    "parameter": "Modbus payload",
+    "value": "44 registers; FC04 12/97 bytes; FC16 101/12 bytes",
+    "evidence_level": "observed",
+    "source_or_limit": "application export and correspondence"
+  },
+  {
+    "parameter": "network architecture",
+    "value": "Four NS-3 bridges and seven TAP-connected endpoints; source and host/container setup supplied",
+    "evidence_level": "author-identified source backup",
+    "source_or_limit": "article_sources/comun_ugrid.cc, setup_net_cont.sh and tap-csma-cenario.yaml; not an acquisition-time execution manifest"
+  },
+  {
+    "parameter": "NS-3 build / scheduler mode / exact routing state",
+    "value": "Source selects RealtimeSimulatorImpl, ChecksumEnabled=true and TapBridge UseBridge; exact NS-3 release and synchronization mode not established",
+    "evidence_level": "recovered source defaults; runtime provenance incomplete",
+    "source_or_limit": "article_sources/RECOVERED_CONFIGURATION.json; source link delays are not a calibration experiment"
+  },
+  {
+    "parameter": "Go binary / exact compiler version",
+    "value": "go.mod: Go 1.22.2; builder image: golang:1.24-alpine; runtime: alpine:latest; gologix v0.39.0-beta; simonvetter/modbus v1.6.4",
+    "evidence_level": "source dependency declarations; acquisition compiler unknown",
+    "source_or_limit": "article_sources includes go.mod/go.sum and Dockerfiles. Unpinned image tags and archived binary/source mismatch prevent exact build attribution."
+  },
+  {
+    "parameter": "plant solver / model step / full plant project",
+    "value": null,
+    "evidence_level": "unavailable",
+    "source_or_limit": "needed for independent electrical-model replication"
+  },
+  {
+    "parameter": "complete EMS LADDER project and AOI configuration",
+    "value": null,
+    "evidence_level": "unavailable",
+    "source_or_limit": "needed for independent controller replication"
+  },
+  {
+    "parameter": "cross-clock calibration / scheduler lag bound",
+    "value": null,
+    "evidence_level": "unavailable",
+    "source_or_limit": "no common-clock measurement accuracy claim"
+  },
+  {
+    "parameter": "controlled disturbances / alternative-platform runs",
+    "value": null,
+    "evidence_level": "not performed in this dataset",
+    "source_or_limit": "future work"
+  }
+]

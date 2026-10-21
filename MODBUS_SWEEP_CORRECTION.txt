@@ -1,0 +1,10 @@
+RECONSTRUCTION CORRECTION - TABLE 9
+The archived EMS Modbus source stores Timestamp:start, and the timestamp aligns with the request in the EMS capture. The sweep boundary must therefore be last request start + last operation duration - first request start.
+The historical table is reproduced by adding the FIRST operation duration instead. That convention understates the duration to the last operation's completion and overstates the subsequent gap. It is replaced in the manuscript and in reanalyze_available_evidence.py.
+
+                         Previous mean / median / P95 / maximum (ms)     Corrected
+Read sweep (187)          819.74 / 816.90 / 835.45 / 853.47               850.32 / 847.09 / 866.20 / 885.48
+Write sweep (222)         832.23 / 821.95 / 918.80 / 1049.64              865.46 / 856.20 / 953.85 / 1090.26
+Gap (222)                161.95 / 158.04 / 177.19 / 264.72               128.72 / 125.16 / 148.05 / 234.42
+POI-to-POI cycle (222)    994.18 / 980.58 / 1084.78 / 1265.99             unchanged
+41 cycles exceed the 1000 ms reference, unchanged. The 2704 operations, 5408 segment pairs, and read/write transaction times are unchanged. Read/write sweeps overlap; their durations must not be summed as serial phases.

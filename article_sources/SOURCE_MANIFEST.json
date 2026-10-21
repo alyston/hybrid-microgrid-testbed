@@ -1,0 +1,257 @@
+{
+  "source_directory": "backup_simulador_redes_ugrid/backup_simulador_redes_ugrid",
+  "identification": "Author identified this backup as containing the article scripts on 21 October 2026.",
+  "preservation": "Selected files copied byte for byte. No acquisition or deployment was executed.",
+  "files": [
+    {
+      "file": "comun_ugrid.cc",
+      "bytes": 9868,
+      "sha256": "c79bf0d58e4ef64c7b46a1dfa6378dd680c48a8bb69efbe11dfa17c8e5493fbf"
+    },
+    {
+      "file": "setup_net_cont.sh",
+      "bytes": 8448,
+      "sha256": "893c7e5bdf1f8d5ef6d648e8f08b0992f4d89f620562fcfafd2bfdd073ee947d"
+    },
+    {
+      "file": "tap-csma-cenario.yaml",
+      "bytes": 2741,
+      "sha256": "13e538fa10e0750fc0bc8fc3a6888a2d2f553d86c24667d84ae9c027bfd8768a"
+    },
+    {
+      "file": "teardown.sh",
+      "bytes": 3470,
+      "sha256": "fe7c826f85bbcecef55a305e65b23ff67e69c5b1ff52829efed32503ed6e8be9"
+    },
+    {
+      "file": "Image_EMS/ems_router_cplx.go",
+      "bytes": 14149,
+      "sha256": "6d6091b9297799e9e4f6bb9952a3cbd9f419ba8d2bdc22d130f41aa68efe129c"
+    },
+    {
+      "file": "Image_EMS/Arquivos_go/ems_router_cplx_eip.go",
+      "bytes": 30789,
+      "sha256": "3a08312d0af1a8fb956b1b67f95a809814b2f25b23b597c95d9249254c83b9b4"
+    },
+    {
+      "file": "Image_EMS/Arquivos_go/ems_router_cplx_MB.go",
+      "bytes": 14049,
+      "sha256": "3adb28e8877094b9453f2914fb12fac7729a88f3aa85a61f4680bf710daf727e"
+    },
+    {
+      "file": "Image_EMS/go.mod",
+      "bytes": 169,
+      "sha256": "d4c891bdb4c86285f9ad6696d284550267301dafb1a6205bfd7ff23753017e63"
+    },
+    {
+      "file": "Image_EMS/go.sum",
+      "bytes": 420,
+      "sha256": "81039189123ba24981e46e7c1106cf18ec94a7d9226f24cb754227836243d158"
+    },
+    {
+      "file": "Image_EMS/Dockerfile",
+      "bytes": 743,
+      "sha256": "7437f34390eccdc498a910ea54938d4b7320b8c56324733799c79ccaac0302af"
+    },
+    {
+      "file": "Image_EMS/criar_img_ems.sh",
+      "bytes": 99,
+      "sha256": "6a89cbb068dbe286a0b5f5447f34c429a985acbff2aba1081f0458a26fe68b18"
+    },
+    {
+      "file": "Image_Dev/device_router.go",
+      "bytes": 43308,
+      "sha256": "b21a2f631100b83a390c601c9ecf36b7c4d2fd4311784ffa3e76ed715cbb3cf0"
+    },
+    {
+      "file": "Image_Dev/go.mod",
+      "bytes": 133,
+      "sha256": "b942042e343ec95d3f1000f802376d612c331a7ee462cf2bc684e846a85dce51"
+    },
+    {
+      "file": "Image_Dev/go.sum",
+      "bytes": 348,
+      "sha256": "bb45a98c55b22fc557b33b6de69ec5f95e86bd1a0f52f6e7ac3b5fb6a5571cc6"
+    },
+    {
+      "file": "Image_Dev/Dockerfile",
+      "bytes": 747,
+      "sha256": "e5c51d75ca2b47cc9867b95c2723f434c74896899e4191970e36b8cf5a9716f9"
+    },
+    {
+      "file": "Image_Dev/criar_img_dev.sh",
+      "bytes": 99,
+      "sha256": "b8807892098aae2aadee50474d0f778a00734de10430a29a66b1e33e4111d5a2"
+    }
+  ],
+  "excluded": [
+    {
+      "file": "Image_Dev/antigos/device_router.go",
+      "bytes": 13606,
+      "sha256": "a1928967387c1e5e58b814e346c751a7c74618120f3034ab6b4c3ed4b8d91985",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/Device_Router.py",
+      "bytes": 10150,
+      "sha256": "2a84aa194e9d91680a45019e9cefb9ba1ed8d69401118f3c23b79c21fe357449",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/device_router1.go",
+      "bytes": 18613,
+      "sha256": "26117626378b549445e0cb79ee675f91c7e5787db24abb9ae7a349a6c9eb93e2",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/device_router3.go",
+      "bytes": 27206,
+      "sha256": "39e936f4662921586885338b26889d691c1daadd7089933427c52f6766a08443",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/device_router4.go",
+      "bytes": 31612,
+      "sha256": "735292a155f2152034e4707e43fe07f23dfe1120febb0f425fe4915c2c932225",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/device_router5.go",
+      "bytes": 35278,
+      "sha256": "e7e9ce47c7c7b4f842c24ca5614209cc4939baba2499d827d395ce28cb194a08",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/device_router6.go",
+      "bytes": 32181,
+      "sha256": "61e8895f548def7819e450e322d29ac377828a7ab30a7c2b3d0e91a6b45ff394",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/device_router_sem_csv.go",
+      "bytes": 7862,
+      "sha256": "f675592c2011e377273ab9be089bc7b62cd43f8e61a8223c1d69c42883f875d9",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/Dockerfile_Ubuntu",
+      "bytes": 849,
+      "sha256": "726c9d91a70063770b91d29335af5c322c15d0506125d49f85a3993644fd38ba",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/antigos/Ponte_Dev.py",
+      "bytes": 3533,
+      "sha256": "35c546049642ca0c3f82373d36deeb944537ade245be330465b186abcdd1b4e2",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/device_router",
+      "bytes": 3123495,
+      "sha256": "a1909a16644971a43d57e1a020324915eb749f851407ab6e6e9a64c532a4acba",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/Device_Router.py",
+      "bytes": 10150,
+      "sha256": "2a84aa194e9d91680a45019e9cefb9ba1ed8d69401118f3c23b79c21fe357449",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_Dev/Ponte_Dev.py",
+      "bytes": 3533,
+      "sha256": "35c546049642ca0c3f82373d36deeb944537ade245be330465b186abcdd1b4e2",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/Dockerfile_Ubuntu",
+      "bytes": 848,
+      "sha256": "9e9e815a5399cb070f4148190ebb3249d59ce5cb1192f7a31db238c7df8b4c22",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/EMS_Router.py",
+      "bytes": 9893,
+      "sha256": "cfd97e9021b459de52b630c824d1c8adac31f92145902b77130e25dc6a9d2c87",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/ems_router_cplx",
+      "bytes": 4393963,
+      "sha256": "9208c6b7fe9ae6e6c64bcfe7bca1dceedfc04d6bb3d2b28451051fd671427cba",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/ems_router_cplx.go",
+      "bytes": 24744,
+      "sha256": "2415c10db02128e499b1b1f0fad71e6db1228047444c70dbe6e4f22135452781",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/EMS_Router_CPLX.py",
+      "bytes": 15802,
+      "sha256": "39043628d651656e8da0b6127130202212896e9c166b34824ab725e58f5516f8",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/ems_router_cplx_1.go",
+      "bytes": 14965,
+      "sha256": "c29f0f9d669df5eb9b918c58aa1735c6c6bb6ea33360cb7566bbe3472ccfb919",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/ems_router_cplx_f.go",
+      "bytes": 18904,
+      "sha256": "674c1f38f8b3ec7d039d9a7861f99f1394dc4b3dde381638e43df761461fe910",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/ems_router_cplx_upd_puro.go",
+      "bytes": 25005,
+      "sha256": "7853f78804b53fa62bc80fbcd0fa2830e08da042490472ea0822411d5fb87433",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/Ponte_EMS.py",
+      "bytes": 2985,
+      "sha256": "70b4a1d9293359ca61aef291abd7e961c26e0ea13aedef7d6df0667a8e0bf87a",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/antigos/Ponte_EMS_PLC.py",
+      "bytes": 2929,
+      "sha256": "54a618ce0a1c68232e01545dbb93a39eccebdf5824db47e8a870b6f844c59075",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/EMS_Router.py",
+      "bytes": 9893,
+      "sha256": "cfd97e9021b459de52b630c824d1c8adac31f92145902b77130e25dc6a9d2c87",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/ems_router_cplx",
+      "bytes": 4393939,
+      "sha256": "e2b77559a8c51e503deb34e134241768ee42756e72302d8a744604b3e6c4910f",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/EMS_Router_CPLX.py",
+      "bytes": 15802,
+      "sha256": "39043628d651656e8da0b6127130202212896e9c166b34824ab725e58f5516f8",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/Ponte_EMS.py",
+      "bytes": 2985,
+      "sha256": "70b4a1d9293359ca61aef291abd7e961c26e0ea13aedef7d6df0667a8e0bf87a",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    },
+    {
+      "file": "Image_EMS/Ponte_EMS_PLC.py",
+      "bytes": 2929,
+      "sha256": "54a618ce0a1c68232e01545dbb93a39eccebdf5824db47e8a870b6f844c59075",
+      "reason": "Compiled executable, legacy directory or alternative Python implementation; not needed for the selected Go/NS-3 source package."
+    }
+  ]
+}

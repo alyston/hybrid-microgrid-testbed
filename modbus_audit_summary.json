@@ -1,0 +1,225 @@
+{
+  "status": "COUNT_DISCREPANCY_RESOLVED_WITH_ORIGINAL_PCAP",
+  "pcap_sha256": "c865b2df64fbe865b515b433aae9626ef8ec4829721b7d4f6b810cc33c7bea32",
+  "log_sha256": "97003ce64cc46d947df4c1da3bca5677640f6378c09e0f24c45c6e888674f1d8",
+  "capture": {
+    "packets": 16945,
+    "first_utc": "2026-04-30T21:43:26.939841000Z",
+    "last_utc": "2026-04-30T21:47:15.825540000Z",
+    "duration_s": 228.885699
+  },
+  "shared_complete_operations_window": {
+    "first_request_utc": "2026-04-30T21:43:34.744190000Z",
+    "last_response_utc": "2026-04-30T21:47:15.799059000Z",
+    "duration_s": 221.054869,
+    "logical_operations": 2704,
+    "paired_segment_transactions": 5408,
+    "adu_frames": 10816
+  },
+  "log": {
+    "count": 2704,
+    "first_timestamp": "2026-04-30T21:43:34.74426318Z",
+    "last_timestamp": "2026-04-30T21:47:15.79394273Z",
+    "matched_to_both_segments": 2704,
+    "identical_forwarded_request_and_response_payloads": 2704,
+    "causally_ordered_four_capture_events": 2704
+  },
+  "segments": {
+    "controlador_roteador": {
+      "requests": 2705,
+      "responses": 2704,
+      "n": 2704,
+      "mean_ms": 20.620000369822485,
+      "median_ms": 15.209,
+      "p95_ms": 48.86559999999999,
+      "p99_ms": 54.681319999999985,
+      "min_ms": 4.692,
+      "max_ms": 144.032
+    },
+    "roteador_dispositivo": {
+      "requests": 2705,
+      "responses": 2704,
+      "n": 2704,
+      "mean_ms": 19.45720451183432,
+      "median_ms": 15.012,
+      "p95_ms": 45.1334,
+      "p99_ms": 45.70073,
+      "min_ms": 4.567,
+      "max_ms": 66.755
+    }
+  },
+  "pooled": {
+    "n": 5408,
+    "mean_ms": 20.038602440828402,
+    "median_ms": 15.1175,
+    "p95_ms": 45.23179999999999,
+    "p99_ms": 51.35098000000011,
+    "min_ms": 4.567,
+    "max_ms": 144.032
+  },
+  "per_device": [
+    {
+      "device": "POI",
+      "unit_id": 0,
+      "log_count": 448,
+      "external_pairs": 448,
+      "internal_pairs": 448,
+      "fc04": 225,
+      "fc16": 223
+    },
+    {
+      "device": "BESS",
+      "unit_id": 1,
+      "log_count": 451,
+      "external_pairs": 451,
+      "internal_pairs": 451,
+      "fc04": 228,
+      "fc16": 223
+    },
+    {
+      "device": "GMG",
+      "unit_id": 2,
+      "log_count": 451,
+      "external_pairs": 451,
+      "internal_pairs": 451,
+      "fc04": 229,
+      "fc16": 222
+    },
+    {
+      "device": "PV",
+      "unit_id": 3,
+      "log_count": 449,
+      "external_pairs": 449,
+      "internal_pairs": 449,
+      "fc04": 227,
+      "fc16": 222
+    },
+    {
+      "device": "LD0",
+      "unit_id": 4,
+      "log_count": 453,
+      "external_pairs": 453,
+      "internal_pairs": 453,
+      "fc04": 231,
+      "fc16": 222
+    },
+    {
+      "device": "LD1",
+      "unit_id": 5,
+      "log_count": 452,
+      "external_pairs": 452,
+      "internal_pairs": 452,
+      "fc04": 230,
+      "fc16": 222
+    }
+  ],
+  "incomplete_interpretation": "One GMG FC16 logical request, TID 138 / Unit ID 2, observed in both segments at capture end. No reply is present before capture termination; loss, timeout or final outcome cannot be inferred.",
+  "tcp_checks": {
+    "tcp.analysis.retransmission": 0,
+    "tcp.analysis.fast_retransmission": 0,
+    "tcp.analysis.spurious_retransmission": 0,
+    "tcp.analysis.out_of_order": 0,
+    "tcp.reassembled_in": 0,
+    "tcp.reassembled.length": 0,
+    "duplicate_tcp_payload_sequence_observations": 0,
+    "complete_single_adu_payloads": 10818,
+    "own_pairing_agrees_with_tshark": 5408
+  },
+  "historical_parser_reproduction": {
+    "matched_pairs": 5408,
+    "mean_ms": 20.03860195889275,
+    "p95_ms": 45.231938362121575,
+    "p99_ms": 51.350991725921745
+  },
+  "tshark_version": "TShark (Wireshark) 4.6.9 (v4.6.9-0-g2d548b197c75).",
+  "percentile_method": "numpy.percentile, linear interpolation; integer-nanosecond PCAP timestamps used for durations",
+  "reproducibility": {
+    "command": [
+      "C:/Program Files/Wireshark/tshark.exe",
+      "-n",
+      "-2",
+      "-r",
+      "C:\\Users\\alyst\\OneDrive\\Documentos\\Doutorado_UFMA\\Tese\\LaTex_GPT\\Revisão_Artigo_IEEE_Access\\Dados\\Dados_Simul_30_04_26_MB\\Dados_Simul_30_04_26_MB\\captureEMS.pcap",
+      "-o",
+      "tcp.desegment_tcp_streams:TRUE",
+      "-Y",
+      "tcp.port == 502",
+      "-T",
+      "fields",
+      "-E",
+      "header=y",
+      "-E",
+      "separator=\t",
+      "-E",
+      "occurrence=a",
+      "-e",
+      "frame.number",
+      "-e",
+      "frame.time_epoch",
+      "-e",
+      "frame.len",
+      "-e",
+      "sll.ifindex",
+      "-e",
+      "sll.pkttype",
+      "-e",
+      "ip.src",
+      "-e",
+      "tcp.srcport",
+      "-e",
+      "ip.dst",
+      "-e",
+      "tcp.dstport",
+      "-e",
+      "tcp.stream",
+      "-e",
+      "tcp.seq_raw",
+      "-e",
+      "tcp.len",
+      "-e",
+      "tcp.flags.syn",
+      "-e",
+      "tcp.flags.fin",
+      "-e",
+      "tcp.flags.reset",
+      "-e",
+      "tcp.analysis.retransmission",
+      "-e",
+      "tcp.analysis.fast_retransmission",
+      "-e",
+      "tcp.analysis.spurious_retransmission",
+      "-e",
+      "tcp.analysis.out_of_order",
+      "-e",
+      "tcp.reassembled_in",
+      "-e",
+      "tcp.reassembled.length",
+      "-e",
+      "mbtcp.trans_id",
+      "-e",
+      "mbtcp.unit_id",
+      "-e",
+      "mbtcp.len",
+      "-e",
+      "modbus.func_code",
+      "-e",
+      "modbus.request_frame",
+      "-e",
+      "modbus.response_time",
+      "-e",
+      "tcp.payload"
+    ],
+    "sources": [
+      {
+        "file": "C:\\Users\\alyst\\OneDrive\\Documentos\\Doutorado_UFMA\\Tese\\LaTex_GPT\\Revisão_Artigo_IEEE_Access\\Dados\\Dados_Simul_30_04_26_MB\\Dados_Simul_30_04_26_MB\\captureEMS.pcap",
+        "sha256": "c865b2df64fbe865b515b433aae9626ef8ec4829721b7d4f6b810cc33c7bea32",
+        "bytes": 2052826
+      },
+      {
+        "file": "C:\\Users\\alyst\\OneDrive\\Documentos\\Doutorado_UFMA\\Tese\\LaTex_GPT\\Revisão_Artigo_IEEE_Access\\Dados\\Dados_Simul_30_04_26_MB\\Dados_Simul_30_04_26_MB\\plc_scan_metrics.csv",
+        "sha256": "97003ce64cc46d947df4c1da3bca5677640f6378c09e0f24c45c6e888674f1d8",
+        "bytes": 263522
+      }
+    ]
+  }
+}

@@ -1,0 +1,604 @@
+{
+  "status": "PASS",
+  "checked_table_groups": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "rounded_numeric_checks": 98,
+  "modbus_operations_verified_at_four_packet_boundaries": 2704,
+  "new_experiments": false,
+  "checks": [
+    {
+      "check": "Table 8 MB read mean",
+      "actual": 18.850608759124086,
+      "reported": 18.85,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB read median",
+      "actual": 15.089,
+      "reported": 15.09,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB read p95",
+      "actual": 35.47155,
+      "reported": 35.47,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB write mean",
+      "actual": 20.454134182908543,
+      "reported": 20.45,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB write median",
+      "actual": 15.1835,
+      "reported": 15.18,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB write p95",
+      "actual": 45.5501,
+      "reported": 45.55,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP read mean",
+      "actual": 5.773049578059071,
+      "reported": 5.77,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP read median",
+      "actual": 5.7735,
+      "reported": 5.77,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP read p95",
+      "actual": 7.308,
+      "reported": 7.31,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP write mean",
+      "actual": 11.664082410337553,
+      "reported": 11.66,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP write median",
+      "actual": 12.0795,
+      "reported": 12.08,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP write p95",
+      "actual": 13.6717,
+      "reported": 13.67,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB 4 population SD",
+      "actual": 13.450349585945967,
+      "reported": 13.45,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB 4 p99",
+      "actual": 36.96554999999996,
+      "reported": 36.97,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB 16 population SD",
+      "actual": 14.241326787483741,
+      "reported": 14.24,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 MB 16 p99",
+      "actual": 45.93105,
+      "reported": 45.93,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP READ_COM_REF population SD",
+      "actual": 2.5309149045100527,
+      "reported": 2.53,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP READ_COM_REF p99",
+      "actual": 11.858210000000001,
+      "reported": 11.86,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP WRITE_STATUS_FEEDBACK population SD",
+      "actual": 2.3286072742061856,
+      "reported": 2.33,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 8 EIP WRITE_STATUS_FEEDBACK p99",
+      "actual": 18.865679999999998,
+      "reported": 18.87,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 read_sweep mean",
+      "actual": 850.3179619304813,
+      "reported": 850.32,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 read_sweep median",
+      "actual": 847.093576,
+      "reported": 847.09,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 read_sweep p95",
+      "actual": 866.2049281,
+      "reported": 866.2,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 read_sweep max",
+      "actual": 885.475385,
+      "reported": 885.48,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 write_sweep mean",
+      "actual": 865.4581041801802,
+      "reported": 865.46,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 write_sweep median",
+      "actual": 856.197152,
+      "reported": 856.2,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 write_sweep p95",
+      "actual": 953.84682435,
+      "reported": 953.85,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 write_sweep max",
+      "actual": 1090.261592,
+      "reported": 1090.26,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 gap mean",
+      "actual": 128.72172832882882,
+      "reported": 128.72,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 gap median",
+      "actual": 125.1604555,
+      "reported": 125.16,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 gap p95",
+      "actual": 148.04822249999998,
+      "reported": 148.05,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 gap max",
+      "actual": 234.422355,
+      "reported": 234.42,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 cycle mean",
+      "actual": 994.1798325090091,
+      "reported": 994.18,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 cycle median",
+      "actual": 980.578912,
+      "reported": 980.58,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 cycle p95",
+      "actual": 1084.7765898,
+      "reported": 1084.78,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 9 cycle max",
+      "actual": 1265.994274,
+      "reported": 1265.99,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_write_ms mean",
+      "actual": 70.09038370253164,
+      "reported": 70.09,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_write_ms median",
+      "actual": 69.711,
+      "reported": 69.71,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_write_ms p95",
+      "actual": 78.36205,
+      "reported": 78.36,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_write_ms max",
+      "actual": 86.937,
+      "reported": 86.94,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_latency_ms mean",
+      "actual": 50.55888053797469,
+      "reported": 50.56,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_latency_ms median",
+      "actual": 50.554,
+      "reported": 50.55,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_latency_ms p95",
+      "actual": 51.047850000000004,
+      "reported": 51.05,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_latency_ms max",
+      "actual": 51.76,
+      "reported": 51.76,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_read_ms mean",
+      "actual": 34.749829905063294,
+      "reported": 34.75,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_read_ms median",
+      "actual": 34.9925,
+      "reported": 34.99,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_read_ms p95",
+      "actual": 41.211299999999994,
+      "reported": 41.21,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_read_ms max",
+      "actual": 216.263,
+      "reported": 216.26,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_total_ms mean",
+      "actual": 155.40041297468355,
+      "reported": 155.4,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_total_ms median",
+      "actual": 155.261,
+      "reported": 155.26,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_total_ms p95",
+      "actual": 165.46609999999998,
+      "reported": 165.47,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 10 scan_total_ms max",
+      "actual": 342.322,
+      "reported": 342.32,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 11 EIP physical_input mean",
+      "actual": 10.00265764858575,
+      "reported": 10.003,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP physical_input median",
+      "actual": 10.004,
+      "reported": 10.004,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP physical_input p95",
+      "actual": 10.239,
+      "reported": 10.239,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP physical_input max",
+      "actual": 11.389,
+      "reported": 11.389,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB physical_input mean",
+      "actual": 10.001198949555581,
+      "reported": 10.001,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB physical_input median",
+      "actual": 10.006,
+      "reported": 10.006,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB physical_input p95",
+      "actual": 10.318,
+      "reported": 10.318,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB physical_input max",
+      "actual": 11.671,
+      "reported": 11.671,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP command_cycle mean",
+      "actual": 49.99955473947698,
+      "reported": 50,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP command_cycle median",
+      "actual": 50.011,
+      "reported": 50.011,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP command_cycle p95",
+      "actual": 50.695,
+      "reported": 50.695,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP command_cycle max",
+      "actual": 59.307,
+      "reported": 59.307,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB command_cycle mean",
+      "actual": 49.99948481131395,
+      "reported": 49.999,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB command_cycle median",
+      "actual": 50.002,
+      "reported": 50.002,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB command_cycle p95",
+      "actual": 50.77,
+      "reported": 50.77,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB command_cycle max",
+      "actual": 55.569,
+      "reported": 55.569,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP controller_request mean",
+      "actual": 50.23701985651627,
+      "reported": 50.237,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP controller_request median",
+      "actual": 50.038,
+      "reported": 50.038,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP controller_request p95",
+      "actual": 62.1485,
+      "reported": 62.148,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 EIP controller_request max",
+      "actual": 103.892,
+      "reported": 103.892,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB controller_request mean",
+      "actual": 489.5866438102299,
+      "reported": 489.587,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB controller_request median",
+      "actual": 471.55449999999996,
+      "reported": 471.554,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB controller_request p95",
+      "actual": 937.50255,
+      "reported": 937.503,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 11 MB controller_request max",
+      "actual": 1229.919,
+      "reported": 1229.919,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 12 EIP duration",
+      "actual": 251.825141,
+      "reported": 251.83,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 EIP goodput",
+      "actual": 238.20484230365227,
+      "reported": 238.2,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 EIP mean",
+      "actual": 5.723113160100587,
+      "reported": 5.72,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 EIP p95",
+      "actual": 7.143,
+      "reported": 7.14,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 EIP p99",
+      "actual": 11.90168,
+      "reported": 11.9,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 MB duration",
+      "actual": 228.885699,
+      "reported": 228.89,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 MB goodput",
+      "actual": 20.983259421550844,
+      "reported": 20.98,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 MB mean",
+      "actual": 20.038602440828402,
+      "reported": 20.04,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 MB p95",
+      "actual": 45.23179999999999,
+      "reported": 45.23,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 12 MB p99",
+      "actual": 51.35098000000011,
+      "reported": 51.35,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 13 EIP mean",
+      "actual": 10.003157111528822,
+      "reported": 10.003,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 EIP minimum p95",
+      "actual": 10.217,
+      "reported": 10.217,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 EIP maximum p95",
+      "actual": 10.221,
+      "reported": 10.221,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 EIP minimum p99",
+      "actual": 10.318,
+      "reported": 10.318,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 EIP maximum p99",
+      "actual": 10.322,
+      "reported": 10.322,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 EIP goodput",
+      "actual": 70.380930689209,
+      "reported": 70.38,
+      "decimal_places": 2
+    },
+    {
+      "check": "Table 13 MB mean",
+      "actual": 10.001690512735715,
+      "reported": 10.002,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 MB minimum p95",
+      "actual": 10.296,
+      "reported": 10.296,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 MB maximum p95",
+      "actual": 10.298,
+      "reported": 10.298,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 MB minimum p99",
+      "actual": 10.421,
+      "reported": 10.421,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 MB maximum p99",
+      "actual": 10.425,
+      "reported": 10.425,
+      "decimal_places": 3
+    },
+    {
+      "check": "Table 13 MB goodput",
+      "actual": 70.3911705859769,
+      "reported": 70.39,
+      "decimal_places": 2
+    }
+  ]
+}

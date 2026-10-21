@@ -1,0 +1,14 @@
+[
+  {
+    "file": "EMS_EIP_archived_compatible_20260427.go",
+    "archive_file": "source_snapshots/EMS_EIP_archived_compatible_20260427.go",
+    "sha256": "f7fae3148ebc01dec583618cd4d03d3c1ebf998ca3b817cf0e68ee0280c496eb",
+    "scope": "Archived April EMS source compatible with observed behavior; exact acquisition binary not established."
+  },
+  {
+    "file": "EMS_MB_archived_compatible_20260430.go",
+    "archive_file": "source_snapshots/EMS_MB_archived_compatible_20260430.go",
+    "sha256": "6d6091b9297799e9e4f6bb9952a3cbd9f419ba8d2bdc22d130f41aa68efe129c",
+    "scope": "Archived April EMS source compatible with observed behavior; exact acquisition binary not established."
+  }
+]
